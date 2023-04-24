@@ -19,7 +19,16 @@ exports.createUser = async () => {
 
 exports.findUser = async () => {
   try {
-    const user = await User.findById("644555483669751df1e1892a");
+    // const user = await User.findById("644555483669751df1e1892a");
+    // const user = await User.find({name:'mitu'});
+    // const user = await User.findOne({ name: "mitu" });
+    // const user = await User.exists({ name: "mitu" });
+    const user = await User.where("age")
+      .gt(12)
+      .where("name")
+      .equals("mitu")
+      .limit(2)
+      .select("age");
     console.log(user);
   } catch (err) {
     console.log(err.message);
