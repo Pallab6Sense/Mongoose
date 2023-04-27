@@ -1,3 +1,5 @@
+/* This code is defining two functions `createUser` and `findUser` that interact with a MongoDB
+database using the Mongoose library. */
 const User = require("../../Model/User/User");
 
 exports.createUser = async () => {

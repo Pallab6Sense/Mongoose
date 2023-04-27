@@ -1,3 +1,6 @@
+/* This code is defining a Mongoose schema for a user object with various properties such as name, age,
+email, createdAt, updatedAt, bestFriend, hobbies, and address. It also sets up validation rules for
+some of the properties. Finally, it exports a Mongoose model for the user schema. */
 const mongoose = require("mongoose");
 
 const { Schema, model } = mongoose;

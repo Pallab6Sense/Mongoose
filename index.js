@@ -1,3 +1,6 @@
+/**
+ * The code connects to a MongoDB database and calls functions to create and find users using Mongoose.
+ */
 const mongoose=require('mongoose');
 const Controller=require('./Controller/User/User')
 const createUser=Controller.createUser;
